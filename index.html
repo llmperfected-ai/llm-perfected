@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Consent Mode v2 — default state set BEFORE Tag Manager loads below.
+     Defaults to "denied" for ad/analytics storage until a visitor consents, as required
+     for CA (CCPA/CPRA) visitors and for Google Ads/GA4 to work correctly with consent.
+     SETUP REQUIRED: wire the gtag('consent','update',...) call to your actual cookie/consent
+     banner's "accept" action once you choose one — see delivery report, GA4 section. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
+</script>
+<!-- Google Tag Manager: SETUP REQUIRED — replace GTM-XXXXXXX with your real container ID.
+     Until replaced, this snippet loads nothing and tracks nothing. See delivery report for setup steps. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<!-- Google Search Console — HTML tag verification (URL-prefix property for https://www.llmperfected.com/).
+     SETUP REQUIRED: in Search Console, add this exact property (not the Domain property), choose the
+     "HTML tag" method, and paste the content value it gives you below in place of the placeholder.
+     This tag only needs to exist on the homepage — Search Console checks "/" for the URL-prefix property.
+     See DEPLOYMENT.md Section 8 for the full verification + sitemap submission walkthrough. -->
+<meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#F7F5F0">
+<meta name="theme-color" content="#121A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>AI Receptionist for Bay Area Small Businesses | LLM Perfected</title>
+<meta name="description" content="24/7 AI receptionist for Bay Area small businesses — call answering, booking & lead follow-up for home services, healthcare, legal & real estate.">
+<link rel="canonical" href="https://www.llmperfected.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Receptionist for Bay Area Small Businesses | LLM Perfected">
+<meta property="og:description" content="24/7 AI receptionist for Bay Area small businesses — call answering, booking & lead follow-up for home services, healthcare, legal & real estate.">
+<meta property="og:url" content="https://www.llmperfected.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Receptionist for Bay Area Small Businesses | LLM Perfected">
+<meta name="twitter:description" content="24/7 AI receptionist for Bay Area small businesses — call answering, booking & lead follow-up for home services, healthcare, legal & real estate.">
+<meta property="og:image" content="https://www.llmperfected.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:image" content="https://www.llmperfected.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.llmperfected.com/#organization",
+  "name": "LLM Perfected",
+  "url": "https://www.llmperfected.com/",
+  "image": "https://www.llmperfected.com/og-image.png",
+  "telephone": "+1-415-251-6201",
+  "email": "sales@llmperfected.com",
+  "priceRange": "$347-$697",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "140 San Pedro Rd",
+    "addressLocality": "Daly City",
+    "addressRegion": "CA",
+    "postalCode": "94014",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {"@type": "City", "name": "San Francisco"},
+    {"@type": "City", "name": "Daly City"},
+    {"@type": "City", "name": "Oakland"},
+    {"@type": "City", "name": "San Jose"},
+    {"@type": "AdministrativeArea", "name": "The Peninsula"}
+  ],
+  "knowsLanguage": ["en", "es"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "LLM Perfected Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Receptionist", "description": "24/7 AI-powered call answering in English and Spanish."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automated Scheduling", "description": "AI-driven appointment booking synced to the client's calendar."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lead Follow-Up", "description": "Automated text and call follow-up for unconverted leads."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estimates & Proposals", "description": "Automated quote and proposal generation from call details."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Invoicing Automation", "description": "Automated invoicing and payment reminders."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Internal AI Assistants", "description": "Internal AI tools for staff to query jobs, customers, and schedules."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom AI Agents for Business", "description": "Custom AI agents for sales qualification, outbound follow-up, scheduling and dispatch, document drafting, recruiting, reputation management, and research and reporting."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Design & Build", "description": "Mobile-first website design and development."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local SEO & Google Business Profile", "description": "Local search optimization and Google Business Profile management."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Marketing Automation", "description": "Automated email and SMS marketing campaigns."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CRM & Business Tools Setup", "description": "Setup and integration of CRM, payments, and scheduling tools."}}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is an AI receptionist?",
+     "acceptedAnswer": {"@type": "Answer", "text": "An AI receptionist is software that answers incoming business calls in place of (or alongside) a human front desk — picking up, understanding what the caller needs, booking appointments directly onto a calendar, answering routine questions, and escalating anything it can't handle to a real person. LLM Perfected configures one specifically around a client's own services, pricing, and scheduling rules rather than running a generic script."}},
+    {"@type": "Question", "name": "How much does an AI receptionist cost?",
+     "acceptedAnswer": {"@type": "Answer", "text": "At LLM Perfected, flat monthly pricing runs $347-$697/mo depending on plan, plus a one-time setup fee ($900-$1,800), with custom pricing for multi-location or high-volume teams. That's flat-rate, not the per-minute billing common with traditional human answering services."}},
+    {"@type": "Question", "name": "How fast can LLM Perfected be live for my business?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Most Bay Area clients are live within 5-7 business days of signing. We script your call flows, connect your calendar and CRM, and run a review call with you before anything goes live to real customers."}},
+    {"@type": "Question", "name": "What happens when the AI can't handle a call?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Every call flow includes escalation rules you set. Calls that need a human — a complaint, a complex quote, anything outside the script — are routed to your cell, a teammate, or a message queue, never left hanging."}},
+    {"@type": "Question", "name": "Does it work in Spanish as well as English?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. English and Spanish are supported out of the box and the system can detect which language a caller is using and respond in kind, without a separate phone line."}},
+    {"@type": "Question", "name": "Is this the same as a generic chatbot or voice AI app?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. Off-the-shelf AI apps are built for the average user. We configure your scripts, booking rules, and escalation paths specifically for your business before launch, and keep tuning them as your business changes."}},
+    {"@type": "Question", "name": "Will customers know they're talking to an AI?",
+     "acceptedAnswer": {"@type": "Answer", "text": "We disclose it when asked or when required, and we design conversations to be direct and useful rather than to disguise what it is. The goal is a fast, accurate answer, not a trick."}},
+    {"@type": "Question", "name": "What does setup actually involve on my end?",
+     "acceptedAnswer": {"@type": "Answer", "text": "A 30-45 minute kickoff call to map your services, pricing, and calendar rules, plus access to the scheduling tool you already use. We build the call flows; you review and approve them before launch."}},
+    {"@type": "Question", "name": "Do you build AI agents for things other than answering the phone?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. The AI receptionist is our most requested agent, but we also build agents for sales qualification, outbound follow-up, scheduling and dispatch, document and proposal drafting, recruiting, reputation management, and recurring research and reporting. We scope which ones actually make sense for your business before recommending any of them."}}
+  ]
+}
+</script>
+<style>
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--accent-deep,#0E3E68);color:#fff;padding:12px 18px;border-radius:0 0 10px 0;z-index:999;font-size:.9rem;text-decoration:none;}
+.skip-link:focus{left:0;}
+:root{
+  --bg:#F7F5F0;
+  --bg-elevated:#FFFFFF;
+  --bg-sunken:#EDEAE2;
+  --text:#1A2733;
+  --text-muted:#54606B;
+  --border:#DCD6C9;
+  --border-strong:#B9B0A0;
+  --accent:#15578F;
+  --accent-bright:#1868AC;
+  --accent-deep:#0E3E68;
+  --on-accent:#FFFFFF;
+  --accent-soft:#E2EDF6;
+  --secondary:#2E7D63;
+  --secondary-soft:#E3F1EB;
+  --warn:#9C5A1E;
+  --warn-soft:#F7E9DA;
+  --shadow:0 18px 40px -20px rgba(20,38,56,.35);
+  --shadow-sm:0 6px 16px -8px rgba(20,38,56,.28);
+  --radius:14px;
+  --radius-lg:22px;
+  --font-display:'Sora',system-ui,sans-serif;
+  --font-body:'IBM Plex Sans',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121A22;
+    --bg-elevated:#1A2530;
+    --bg-sunken:#0D1419;
+    --text:#EDF1F4;
+    --text-muted:#A8B4BE;
+    --border:#2C3A47;
+    --border-strong:#44535F;
+    --accent:#3B9EDE;
+    --accent-bright:#4CACE8;
+    --accent-deep:#2679AE;
+    --on-accent:#06151F;
+    --accent-soft:#1D3243;
+    --secondary:#4FBE9B;
+    --secondary-soft:#163429;
+    --warn:#E0A357;
+    --warn-soft:#3A2A15;
+    --shadow:0 18px 40px -20px rgba(0,0,0,.6);
+    --shadow-sm:0 6px 16px -8px rgba(0,0,0,.55);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121A22;
+  --bg-elevated:#1A2530;
+  --bg-sunken:#0D1419;
+  --text:#EDF1F4;
+  --text-muted:#A8B4BE;
+  --border:#2C3A47;
+  --border-strong:#44535F;
+  --accent:#3B9EDE;
+  --accent-bright:#4CACE8;
+  --accent-deep:#2679AE;
+  --on-accent:#06151F;
+  --accent-soft:#1D3243;
+  --secondary:#4FBE9B;
+  --secondary-soft:#163429;
+  --warn:#E0A357;
+  --warn-soft:#3A2A15;
+  --shadow:0 18px 40px -20px rgba(0,0,0,.6);
+  --shadow-sm:0 6px 16px -8px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--font-body);line-height:1.6;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;}
+.icon{width:1.3em;height:1.3em;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.15;margin:0 0 .5em;color:var(--text);}
+h1{font-size:clamp(2.1rem,4.6vw,3.3rem);font-weight:800;letter-spacing:-.01em;}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.01em;}
+h3{font-size:1.2rem;}
+p{margin:0 0 1em;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.eyebrow{display:inline-flex;align-items:center;gap:.5em;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;color:var(--accent);font-weight:500;margin-bottom:.9em;}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;}
+section{padding:76px 0;}
+@media (max-width:640px){section{padding:52px 0;}}
+.section-sunken{background:var(--bg-sunken);}
+.section-elevated{background:var(--bg-elevated);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.lead{font-size:1.08rem;color:var(--text-muted);max-width:640px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--font-body);font-weight:600;font-size:.98rem;padding:14px 26px;border-radius:999px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease, background .15s ease;}
+.btn-primary{background:var(--accent-deep);color:var(--on-accent);box-shadow:var(--shadow-sm);}
+.btn-primary:hover{background:var(--accent-bright);transform:translateY(-1px);box-shadow:var(--shadow);}
+.btn-primary:focus-visible{outline:3px solid var(--accent-bright);outline-offset:2px;}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--border-strong);}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+.btn-on-accent{background:var(--on-accent);color:var(--accent-deep);}
+.btn-on-accent:hover{transform:translateY(-1px);box-shadow:var(--shadow);}
+
+/* nav */
+nav.site-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
+.nav-inner{position:relative;max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.brand{display:flex;align-items:center;gap:.6em;font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em;text-decoration:none;}
+.brand .dot{color:var(--accent);}
+.nav-links{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem;}
+.nav-links a{text-decoration:none;color:var(--text-muted);font-weight:500;}
+.nav-links a:hover{color:var(--accent);}
+.nav-cta{display:flex;align-items:center;gap:14px;}
+.nav-link-cta{display:none;}
+.nav-toggle{display:none;background:none;border:1px solid var(--border-strong);border-radius:10px;cursor:pointer;color:var(--text);padding:12px;line-height:0;flex-shrink:0;}
+.nav-toggle .icon{width:1.4em;height:1.4em;}
+@media (max-width:860px){
+  .nav-cta > .btn-primary{display:none;}
+  .nav-links{display:none;}
+  .nav-toggle{display:inline-flex;}
+  .nav-links.open{
+    display:flex;flex-direction:column;align-items:stretch;gap:4px;
+    position:absolute;top:100%;left:16px;right:16px;
+    background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius);
+    padding:14px 18px;box-shadow:var(--shadow);z-index:60;
+    max-height:calc(100vh - 80px);overflow-y:auto;
+  }
+  .nav-links.open a{display:block;width:100%;padding:12px 2px;border-bottom:1px solid var(--border);}
+  .nav-links.open li:last-child a{border-bottom:none;}
+  .nav-link-cta{display:list-item;margin-top:6px;}
+  .nav-link-cta a{text-align:center;background:var(--accent-deep);color:var(--on-accent);border-radius:999px;font-weight:600;padding:12px 2px;border-bottom:none !important;}
+}
+
+/* hero */
+.hero{position:relative;padding:72px 0 56px;overflow:hidden;}
+.hero-decor{position:absolute;top:-120px;right:-140px;width:460px;height:460px;opacity:.5;pointer-events:none;}
+@media (max-width:640px){.hero-decor{width:300px;height:300px;top:-90px;right:-110px;opacity:.35;}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;}}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.6em;}
+.hero-cta-note{font-size:.85rem;color:var(--text-muted);margin-top:.9em;}
+.hero-facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:2em;padding-top:1.6em;border-top:1px solid var(--border);}
+.hero-fact{display:flex;align-items:center;gap:.6em;font-size:.88rem;color:var(--text-muted);}
+.hero-fact .icon{color:var(--secondary);width:1.1em;height:1.1em;}
+.hero-panel{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;}
+.hero-panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);background:var(--bg-sunken);}
+.hero-panel-head .eyebrow{margin:0;}
+.hero-panel-tag{font-size:.8rem;font-family:var(--font-mono);color:var(--text-muted);background:var(--bg-elevated);border:1px solid var(--border);border-radius:999px;padding:3px 10px;}
+.call-feed{list-style:none;margin:0;padding:10px 0;}
+.call-feed li{display:flex;gap:14px;align-items:flex-start;padding:12px 20px;border-bottom:1px solid var(--border);}
+.call-feed li:last-child{border-bottom:none;}
+.call-feed .icon-wrap{width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.call-feed .icon-wrap.ok{background:var(--secondary-soft);color:var(--secondary);}
+.call-feed .meta{font-size:.78rem;color:var(--text-muted);font-family:var(--font-mono);}
+.call-feed .title{font-weight:600;font-size:.92rem;}
+
+/* trust strip */
+.trust-strip{padding:34px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-elevated);}
+.trust-row{display:flex;flex-wrap:wrap;gap:22px 36px;align-items:center;justify-content:center;}
+.trust-item{display:flex;align-items:center;gap:.6em;font-size:.88rem;color:var(--text-muted);font-weight:500;}
+.trust-item .icon{color:var(--accent);}
+.trust-item a{text-decoration:underline;text-decoration-color:var(--border-strong);}
+
+/* services overview */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:920px){.services-grid{grid-template-columns:1fr;}}
+.service-cat{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;display:flex;flex-direction:column;}
+.service-cat-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
+.service-cat-head .icon-wrap{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.service-cat p.cat-desc{color:var(--text-muted);font-size:.9rem;margin:0 0 16px;}
+.service-list{list-style:none;margin:0 0 18px;padding:0;flex-grow:1;}
+.service-list li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-size:.92rem;border-bottom:1px solid var(--border);}
+.service-list li:last-child{border-bottom:none;}
+.service-list .icon{color:var(--secondary);width:1.05em;height:1.05em;margin-top:.2em;flex-shrink:0;}
+.service-cat .jump-link{display:inline-block;padding:4px 0;font-size:.88rem;font-weight:600;color:var(--accent);text-decoration:none;margin-top:auto;}
+.service-cat .jump-link:hover{text-decoration:underline;}
+
+/* sample metrics */
+.sample-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.sample-flag{font-size:.78rem;font-family:var(--font-mono);color:var(--text-muted);background:var(--bg-sunken);border:1px solid var(--border);border-radius:999px;padding:5px 12px;}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media (max-width:760px){.stats-grid{grid-template-columns:1fr;}}
+.stat-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 26px;}
+.stat-card .icon-wrap{width:42px;height:42px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.stat-num{font-family:var(--font-mono);font-size:2.1rem;font-weight:500;color:var(--accent-deep);}
+.stat-label{color:var(--text-muted);font-size:.92rem;margin-top:.3em;}
+.sample-caption{font-size:.82rem;color:var(--text-muted);margin-top:18px;}
+
+/* calculator */
+.calc-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+@media (max-width:860px){.calc-card{grid-template-columns:1fr;}}
+@media (max-width:480px){.calc-card{padding:22px;gap:28px;border-radius:var(--radius);}}
+input[type="range"]{height:30px;}
+input[type="range"]::-webkit-slider-thumb{width:22px;height:22px;}
+.calc-field{margin-bottom:24px;}
+.calc-field label{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;margin-bottom:8px;}
+.calc-field output{font-family:var(--font-mono);color:var(--accent-deep);}
+input[type="range"]{width:100%;accent-color:var(--accent);}
+.calc-results{background:var(--bg-sunken);border-radius:var(--radius);padding:24px;}
+.calc-result-row{display:flex;justify-content:space-between;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--border);}
+.calc-result-row:last-child{border-bottom:none;}
+.calc-result-row .num{font-family:var(--font-mono);font-size:1.3rem;font-weight:500;}
+.calc-result-row.highlight .num{color:var(--secondary);font-size:1.6rem;}
+
+/* icon feature cards */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:920px){.feature-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:620px){.feature-grid{grid-template-columns:1fr;}}
+.feature-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;transition:transform .15s ease, box-shadow .15s ease;}
+.feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+.feature-card .icon-wrap{width:46px;height:46px;border-radius:13px;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.feature-card .icon-wrap .icon{width:1.5em;height:1.5em;}
+.feature-card h3{margin-bottom:.4em;}
+.feature-card p{color:var(--text-muted);font-size:.94rem;margin-bottom:0;}
+
+.beyond-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+@media (max-width:760px){.beyond-grid{grid-template-columns:1fr;}}
+.beyond-card{background:var(--bg-elevated);border:1px solid var(--border-strong);border-radius:var(--radius-lg);padding:30px;display:flex;gap:20px;align-items:flex-start;}
+.beyond-card .icon-wrap{width:50px;height:50px;border-radius:14px;background:var(--secondary-soft);color:var(--secondary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+
+/* ai agents grid */
+.agent-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+@media (max-width:920px){.agent-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:540px){.agent-grid{grid-template-columns:1fr;}}
+.agent-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:transform .15s ease, box-shadow .15s ease;}
+.agent-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm);}
+.agent-card .icon-wrap{width:38px;height:38px;border-radius:10px;background:var(--secondary-soft);color:var(--secondary);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+.agent-card .icon-wrap .icon{width:1.3em;height:1.3em;}
+.agent-card h3{font-size:1rem;margin-bottom:.35em;}
+.agent-card p{color:var(--text-muted);font-size:.88rem;margin-bottom:0;}
+.agent-note{font-size:.88rem;color:var(--text-muted);margin-top:22px;max-width:760px;}
+
+/* process rail */
+.process-rail{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:10px;}
+@media (max-width:860px){.process-rail{grid-template-columns:1fr;}}
+.process-rail::before{content:"";position:absolute;top:28px;left:5%;right:5%;height:2px;background:linear-gradient(90deg,var(--border-strong),var(--border-strong) 80%,transparent);}
+@media (max-width:860px){.process-rail::before{display:none;}}
+.process-step{position:relative;}
+.process-step .icon-wrap{width:56px;height:56px;border-radius:50%;background:var(--bg-elevated);border:2px solid var(--accent);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;margin-bottom:18px;position:relative;z-index:2;}
+.process-step h3{font-size:1.05rem;}
+.process-step p{color:var(--text-muted);font-size:.92rem;}
+
+/* industries */
+.industry-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+@media (max-width:760px){.industry-grid{grid-template-columns:1fr;}}
+.industry-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;}
+.industry-card-head{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.industry-card-head .icon-wrap{width:44px;height:44px;border-radius:12px;background:var(--accent-soft);color:var(--accent-deep);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;}
+.tag{font-size:.78rem;background:var(--bg-sunken);border:1px solid var(--border);border-radius:999px;padding:5px 12px;color:var(--text-muted);}
+.industry-card .value{font-size:.85rem;color:var(--text-muted);border-top:1px solid var(--border);padding-top:12px;margin-top:14px;}
+.industry-card .value a{color:var(--accent);text-decoration:underline;}
+
+/* comparison table redesigned as cards */
+.compare-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.compare-hint{display:none;font-size:.8rem;color:var(--text-muted);margin-bottom:10px;}
+@media (max-width:760px){.compare-hint{display:block;}}
+table.compare{width:100%;border-collapse:separate;border-spacing:0;min-width:640px;}
+table.compare caption{text-align:left;font-size:.85rem;color:var(--text-muted);margin-bottom:14px;}
+table.compare th,table.compare td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--border);font-size:.94rem;vertical-align:top;}
+table.compare thead th{font-family:var(--font-display);font-size:.9rem;border-bottom:2px solid var(--border-strong);}
+table.compare th:first-child,table.compare td:first-child{color:var(--text-muted);font-weight:500;width:26%;}
+table.compare .col-us{background:var(--accent-soft);border-left:2px solid var(--accent);border-right:2px solid var(--accent);position:relative;}
+table.compare thead .col-us{border-radius:var(--radius) var(--radius) 0 0;border-top:2px solid var(--accent);}
+table.compare tbody tr:last-child .col-us{border-radius:0 0 var(--radius) var(--radius);border-bottom:2px solid var(--accent);}
+table.compare .col-us-label{display:flex;align-items:center;gap:8px;color:var(--accent-deep);font-weight:700;}
+table.compare .badge-best{font-size:.76rem;font-family:var(--font-mono);background:var(--accent-deep);color:var(--on-accent);border-radius:999px;padding:3px 9px;letter-spacing:.03em;}
+.yn{display:inline-flex;align-items:center;gap:.4em;}
+.yn .icon{width:1.1em;height:1.1em;}
+.yn.yes{color:var(--secondary);}
+.yn.no{color:var(--text-muted);}
+.yn.partial{color:var(--warn);}
+
+/* testimonials / trust proof */
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:860px){.proof-grid{grid-template-columns:1fr;}}
+.proof-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px;display:flex;flex-direction:column;gap:14px;}
+.proof-card .quote-mark{font-family:var(--font-display);font-size:2.2rem;color:var(--accent-soft);line-height:1;}
+.proof-card p.quote{font-size:.98rem;color:var(--text);margin:0;flex-grow:1;}
+.proof-attrib{font-size:.84rem;color:var(--text-muted);border-top:1px solid var(--border);padding-top:12px;}
+.proof-disclosure{font-size:.82rem;color:var(--text-muted);margin-top:20px;max-width:720px;}
+
+/* pricing */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch;}
+@media (max-width:920px){.pricing-grid{grid-template-columns:1fr;}}
+.price-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:30px;display:flex;flex-direction:column;}
+.price-card.popular{border-color:var(--accent);box-shadow:var(--shadow);position:relative;}
+.price-card.popular::before{content:"MOST POPULAR";position:absolute;top:-12px;left:28px;background:var(--accent-deep);color:var(--on-accent);font-family:var(--font-mono);font-size:.68rem;letter-spacing:.05em;padding:4px 12px;border-radius:999px;}
+.price-amount{font-family:var(--font-display);font-size:2.1rem;font-weight:800;margin:.2em 0;}
+.price-amount span{font-size:.95rem;font-weight:500;color:var(--text-muted);}
+.price-setup{font-size:.85rem;color:var(--text-muted);margin-bottom:1.2em;}
+.price-feats{list-style:none;margin:0 0 24px;padding:0;flex-grow:1;}
+.price-feats li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;font-size:.92rem;}
+.price-feats .icon{color:var(--secondary);margin-top:.15em;}
+
+/* resources */
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:860px){.resource-grid{grid-template-columns:1fr;}}
+.resource-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px;display:flex;flex-direction:column;}
+.resource-card .icon-wrap{width:40px;height:40px;border-radius:11px;background:var(--secondary-soft);color:var(--secondary);display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.resource-card a.resource-link{margin-top:auto;color:var(--accent);font-weight:600;text-decoration:none;font-size:.92rem;}
+.resource-card a.resource-link:hover{text-decoration:underline;}
+
+/* faq */
+.faq-list{max-width:760px;}
+details.faq-item{border-bottom:1px solid var(--border);padding:18px 0;}
+details.faq-item summary{cursor:pointer;font-weight:600;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;}
+details.faq-item summary::-webkit-details-marker{display:none;}
+details.faq-item summary .icon{color:var(--accent);transition:transform .2s ease;flex-shrink:0;}
+details.faq-item[open] summary .icon{transform:rotate(45deg);}
+details.faq-item p{color:var(--text-muted);margin-top:12px;}
+
+/* final cta */
+.final-cta{position:relative;overflow:hidden;background:var(--accent-deep);color:var(--on-accent);border-radius:var(--radius-lg);padding:56px 48px;text-align:center;}
+@media (max-width:640px){.final-cta{padding:40px 22px;}}
+.final-cta h2{color:var(--on-accent);}
+.final-cta .trust-line{color:color-mix(in srgb, var(--on-accent) 75%, transparent);font-size:.92rem;margin-top:18px;}
+.final-cta-decor{position:absolute;bottom:-80px;left:-60px;width:320px;height:320px;opacity:.25;pointer-events:none;}
+
+/* contact form */
+.contact-form{display:grid;gap:16px;text-align:left;background:var(--bg-elevated);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:34px;max-width:680px;margin:-34px auto 0;position:relative;z-index:2;}
+@media (max-width:640px){.contact-form{padding:24px;margin-top:-22px;}}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media (max-width:560px){.form-row{grid-template-columns:1fr;}}
+.form-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.form-field label{font-size:.85rem;font-weight:600;color:var(--text);}
+.form-field input,.form-field select,.form-field textarea{width:100%;font-family:var(--font-body);font-size:1rem;padding:11px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+.form-field textarea{resize:vertical;min-height:100px;font-family:var(--font-body);}
+.contact-form .form-note{font-size:.8rem;color:var(--text-muted);margin:0;}
+.contact-form .btn-primary{justify-self:start;}
+.contact-form .btn-primary[disabled]{opacity:.6;cursor:not-allowed;}
+.form-status{font-size:.9rem;padding:12px 16px;border-radius:10px;display:none;}
+.form-status.success{display:block;background:var(--secondary-soft);color:var(--secondary);}
+.form-status.error{display:block;background:var(--warn-soft);color:var(--warn);}
+
+/* footer */
+footer{padding:60px 0 28px;border-top:1px solid var(--border);}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;}
+@media (max-width:760px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media (max-width:480px){.footer-grid{grid-template-columns:1fr;gap:26px;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+}
+.footer-grid h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text-muted);margin-bottom:1em;}
+.footer-grid ul{list-style:none;margin:0;padding:0;}
+.footer-grid li{margin-bottom:.6em;font-size:.92rem;}
+.footer-grid a{text-decoration:none;color:var(--text-muted);display:inline-block;padding:6px 0;}
+.footer-grid a:hover{color:var(--accent);}
+.footer-bottom{margin-top:48px;padding-top:24px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem;color:var(--text-muted);}
+.footer-bottom a{display:inline-block;padding:6px 0;}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></symbol>
+<symbol id="i-invoice" viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M9 9h6M9 13h6M9 17h3"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
+<symbol id="i-cross-med" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M12 11v6M9 14h6"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/><path d="M5 7h14M8 21h8"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M6 21V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16M9 9h1M14 9h1M9 13h1M14 13h1M9 17h1M14 17h1"/></symbol>
+<symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10Z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+</svg>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">LLM<span class="dot">.</span>PERFECTED</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#calculator">Calculator</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li class="nav-link-cta"><a href="#contact">Get a free call audit</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="#contact">Get a free call audit</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon" id="navToggleIcon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="top">
+  <svg class="hero-decor" viewBox="0 0 400 400" aria-hidden="true">
+    <circle cx="200" cy="200" r="190" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".4"/>
+    <circle cx="200" cy="200" r="130" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".3"/>
+    <circle cx="200" cy="200" r="70" fill="var(--accent-soft)"/>
+  </svg>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">AI Front Office · San Francisco Bay Area</span>
+      <h1>The AI receptionist, built <em>around</em> your Bay Area business</h1>
+      <p class="lead">One AI-powered system answers every call, books every appointment, and follows up on every lead — in your business's own voice, tuned to how Bay Area customers actually call in.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#contact">Get a free call audit</a>
+        <a class="btn btn-ghost" href="#calculator">See what missed calls cost you</a>
+      </div>
+      <p class="hero-cta-note">No contract required to start a pilot. Setup typically takes 5–7 business days.</p>
+      <div class="hero-facts">
+        <span class="hero-fact"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> English &amp; Spanish</span>
+        <span class="hero-fact"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Live 24/7, every day</span>
+        <span class="hero-fact"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> California-based team</span>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="hero-panel-head">
+        <span class="eyebrow">Sample call log</span>
+        <span class="hero-panel-tag">Illustrative, not live data</span>
+      </div>
+      <ul class="call-feed">
+        <li>
+          <span class="icon-wrap ok"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <div><div class="title">Booked: AC tune-up, Thursday 2pm</div><div class="meta">Daly City · caller spoke Spanish</div></div>
+        </li>
+        <li>
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <div><div class="title">After-hours call answered in 2 rings</div><div class="meta">San Jose · 9:47 PM</div></div>
+        </li>
+        <li>
+          <span class="icon-wrap ok"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <div><div class="title">Follow-up text sent to unresolved lead</div><div class="meta">Oakland · auto-sequence</div></div>
+        </li>
+        <li>
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <div><div class="title">Escalated to on-call tech</div><div class="meta">Complex quote request</div></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="trust-strip">
+  <div class="wrap trust-row">
+    <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg> Based in the San Francisco Bay Area</span>
+    <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg> Bilingual: English &amp; Spanish</span>
+    <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg> No long-term contract to start</span>
+    <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> <a href="privacy.html">Privacy &amp; data handling</a></span>
+    <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Setup in 5–7 business days</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow">Services</span>
+    <h2>Everything included in your AI front office</h2>
+    <p class="lead">Three ways we plug into your business — pick one or combine them. Every engagement starts with a kickoff call to scope which of these actually make sense for you.</p>
+    <div class="services-grid">
+      <div class="service-cat">
+        <div class="service-cat-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <h3 style="margin:0">AI Front Office</h3>
+        </div>
+        <p class="cat-desc">The core call-handling system most clients start with.</p>
+        <ul class="service-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> AI Receptionist (24/7, English &amp; Spanish)</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Automated Scheduling</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lead Follow-Up</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Estimates &amp; Proposals</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Invoicing Automation</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Internal AI Assistants</li>
+        </ul>
+        <a class="jump-link" href="#work">See Front Office details →</a>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span>
+          <h3 style="margin:0">AI Agents for Business</h3>
+        </div>
+        <p class="cat-desc">Custom agents for the repetitive work beyond the phone.</p>
+        <ul class="service-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Customer Support Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sales Qualification Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Outbound Follow-Up Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Scheduling &amp; Dispatch Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Document &amp; Proposal Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Recruiting &amp; Onboarding Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Reputation &amp; Review Agent</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Research &amp; Reporting Agent</li>
+        </ul>
+        <a class="jump-link" href="#ai-agents">See AI Agents details →</a>
+      </div>
+      <div class="service-cat">
+        <div class="service-cat-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+          <h3 style="margin:0">Beyond the Phone</h3>
+        </div>
+        <p class="cat-desc">The rest of your digital front door, handled for you.</p>
+        <ul class="service-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Website Design &amp; Build</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Local SEO &amp; Google Business Profile</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Marketing Automation (Email &amp; SMS)</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> CRM &amp; Business Tools Setup</li>
+        </ul>
+        <a class="jump-link" href="#beyond">See Beyond the Phone details →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sample-head">
+      <div>
+        <span class="eyebrow">What a typical month looks like</span>
+        <h2 style="margin-bottom:0">Illustrative impact for a mid-size home-services client</h2>
+      </div>
+      <span class="sample-flag">Sample figures — not this site's live data</span>
+    </div>
+    <p class="lead">These numbers are a worked example based on typical call volumes we see, not a real-time counter. Use the calculator below to estimate your own numbers.</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <div class="stat-num">214</div>
+        <div class="stat-label">calls answered in a month</div>
+      </div>
+      <div class="stat-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+        <div class="stat-num">58</div>
+        <div class="stat-label">appointments booked directly</div>
+      </div>
+      <div class="stat-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
+        <div class="stat-num">$12,480</div>
+        <div class="stat-label">in jobs recovered from after-6pm calls</div>
+      </div>
+    </div>
+    <p class="sample-caption">Based on a composite of typical Bay Area home-services call patterns and the industry figures cited in our <a href="resources/cost-of-a-missed-call.html">missed-call research</a>. Your results depend on your call volume, close rate, and job value — run the calculator below with your own numbers.</p>
+  </div>
+</section>
+
+<section class="section-elevated" id="calculator">
+  <div class="wrap">
+    <span class="eyebrow">Run your own numbers</span>
+    <h2>What are missed calls costing you?</h2>
+    <p class="lead">Move the sliders to match your business. This updates live as you adjust it — unlike the sample above, this one is really interactive.</p>
+    <div class="calc-card">
+      <div>
+        <div class="calc-field">
+          <label for="missed">Missed calls per week <output id="missedOut">15</output></label>
+          <input type="range" id="missed" min="1" max="60" value="15">
+        </div>
+        <div class="calc-field">
+          <label for="job">Average job value <output id="jobOut">$450</output></label>
+          <input type="range" id="job" min="50" max="3000" step="25" value="450">
+        </div>
+        <div class="calc-field">
+          <label for="close">Typical close rate <output id="closeOut">33%</output></label>
+          <input type="range" id="close" min="5" max="80" value="33">
+        </div>
+      </div>
+      <div class="calc-results">
+        <div class="calc-result-row"><span>Estimated weekly loss</span><span class="num" id="weeklyLoss">$0</span></div>
+        <div class="calc-result-row"><span>Estimated monthly loss</span><span class="num" id="monthlyLoss">$0</span></div>
+        <div class="calc-result-row highlight"><span>Potential annual revenue recovered</span><span class="num" id="annualGain">$0</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">What We Do</span>
+    <h2>A complete front office, not just a voice bot</h2>
+    <p class="lead">Six connected pieces, configured around your business, your calendar, and your pricing.</p>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3>AI Receptionist</h3>
+        <p>Answers every call in your business's voice, in English or Spanish, 24 hours a day.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+        <h3>Automated Scheduling</h3>
+        <p>Books directly into the calendar you already use, respecting your real availability and buffers.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <h3>Lead Follow-Up</h3>
+        <p>Texts and calls back leads who didn't convert the first time, on a schedule you set.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <h3>Estimates &amp; Proposals</h3>
+        <p>Sends standardized quotes based on the details captured during the call.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-invoice"/></svg></span>
+        <h3>Invoicing Automation</h3>
+        <p>Triggers invoices and payment reminders once a job is marked complete.</p>
+      </div>
+      <div class="feature-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Internal AI Assistants</h3>
+        <p>Lets your team ask questions about jobs, customers, and schedules in plain language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ai-agents">
+  <div class="wrap">
+    <span class="eyebrow">AI Agents</span>
+    <h2>Custom AI agents for every part of your business, not just the phone</h2>
+    <p class="lead">The AI receptionist above is one agent. Most businesses end up running several, each handling one repetitive job so your team doesn't have to.</p>
+    <div class="agent-grid">
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <h3>Customer Support Agent</h3>
+        <p>Handles website chat and routine email questions instantly, 24/7.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
+        <h3>Sales Qualification Agent</h3>
+        <p>Scores and routes inbound leads so your team only calls back the ones worth calling.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3>Outbound Follow-Up Agent</h3>
+        <p>Calls or texts cold leads, past customers, or no-shows to re-engage them automatically.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+        <h3>Scheduling &amp; Dispatch Agent</h3>
+        <p>Assigns jobs to the right technician based on location, skill, and availability.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <h3>Document &amp; Proposal Agent</h3>
+        <p>Drafts quotes, contracts, and proposals from the details captured on a call or form.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <h3>Recruiting &amp; Onboarding Agent</h3>
+        <p>Screens applicants, schedules interviews, and walks new hires through onboarding steps.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+        <h3>Reputation &amp; Review Agent</h3>
+        <p>Requests reviews after a job is done and flags negative feedback before it goes public.</p>
+      </div>
+      <div class="agent-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Research &amp; Reporting Agent</h3>
+        <p>Pulls together competitor pricing, market data, or weekly performance summaries on a schedule.</p>
+      </div>
+    </div>
+    <p class="agent-note">These run alongside the AI receptionist and front-office tools above, or on their own if phone answering isn't your bottleneck. We scope which agents actually make sense for your business on the kickoff call — we won't sell you eight agents if you need two.</p>
+  </div>
+</section>
+
+<section class="section-sunken" id="beyond">
+  <div class="wrap">
+    <span class="eyebrow">Beyond the Phone</span>
+    <h2>Website design, local SEO &amp; the rest of your digital front door</h2>
+    <p class="lead">Services we commonly pair with the AI agents above, so the rest of your online presence matches the quality of your call handling.</p>
+    <div class="beyond-grid">
+      <div class="beyond-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <div>
+          <h3>Website Design &amp; Build</h3>
+          <p style="color:var(--text-muted);margin:0">A fast, mobile-first site that matches how people actually search for your business, with booking and quote requests built in.</p>
+        </div>
+      </div>
+      <div class="beyond-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <div>
+          <h3>Local SEO &amp; Google Business Profile</h3>
+          <p style="color:var(--text-muted);margin:0">Cleaned-up listings and review responses so you show up for "near me" searches.</p>
+        </div>
+      </div>
+      <div class="beyond-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <div>
+          <h3>Marketing Automation (Email &amp; SMS)</h3>
+          <p style="color:var(--text-muted);margin:0">Automated email and text campaigns that bring past customers back without anyone manually sending a follow-up.</p>
+        </div>
+      </div>
+      <div class="beyond-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-invoice"/></svg></span>
+        <div>
+          <h3>CRM &amp; Business Tools Setup</h3>
+          <p style="color:var(--text-muted);margin:0">We set up and connect the CRM, payments, and scheduling tools you already use, so every system actually talks to each other.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How It Works</span>
+    <h2>From kickoff call to live in about a week</h2>
+    <div class="process-rail">
+      <div class="process-step">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <h3>Kickoff call</h3>
+        <p>30–45 minutes to map your services, pricing, and scheduling rules.</p>
+      </div>
+      <div class="process-step">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+        <h3>We build your flows</h3>
+        <p>Call scripts, booking logic, and escalation paths, written for your business specifically.</p>
+      </div>
+      <div class="process-step">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <h3>You review &amp; approve</h3>
+        <p>We walk through every flow with you before a single real customer hears it.</p>
+      </div>
+      <div class="process-step">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3>Go live</h3>
+        <p>Your number starts taking real calls, with us monitoring closely the first two weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-elevated" id="industries">
+  <div class="wrap">
+    <span class="eyebrow">Industries</span>
+    <h2>Built for how Bay Area businesses actually run</h2>
+    <div class="industry-grid">
+      <div class="industry-card">
+        <div class="industry-card-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+          <h3 style="margin:0">Home Services</h3>
+        </div>
+        <p style="color:var(--text-muted)">HVAC, plumbing, electrical, and appliance repair crews lose the most revenue to calls that go unanswered mid-job.</p>
+        <div class="tags">
+          <span class="tag">HVAC</span><span class="tag">Plumbing</span><span class="tag">Electrical</span>
+          <span class="tag">Appliance Repair</span><span class="tag">Roofing</span><span class="tag">Landscaping</span>
+          <span class="tag">Pest Control</span><span class="tag">Garage Doors</span>
+        </div>
+        <div class="value">Industry data on missed-call rates <a href="resources/cost-of-a-missed-call.html">(source)</a> · Local guides: <a href="industries/home-services/daly-city.html">Daly City</a>, <a href="industries/home-services/san-francisco.html">San Francisco</a>, <a href="industries/home-services/oakland.html">Oakland</a>, <a href="industries/home-services/san-jose.html">San Jose</a></div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-card-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-cross-med"/></svg></span>
+          <h3 style="margin:0">Healthcare</h3>
+        </div>
+        <p style="color:var(--text-muted)">Clinics and practices need intake that's accurate the first time and never puts a patient on hold indefinitely.</p>
+        <div class="tags">
+          <span class="tag">Dental</span><span class="tag">Chiropractic</span><span class="tag">Physical Therapy</span>
+          <span class="tag">Urgent Care</span><span class="tag">Veterinary</span><span class="tag">Optometry</span>
+        </div>
+        <div class="value">A bilingual answering service matters most here <a href="resources/bilingual-answering-service-bay-area.html">(source)</a></div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-card-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-scale"/></svg></span>
+          <h3 style="margin:0">Legal</h3>
+        </div>
+        <p style="color:var(--text-muted)">A missed intake call for a personal-injury or family-law firm can mean a missed case, not just a missed appointment.</p>
+        <div class="tags">
+          <span class="tag">Personal Injury</span><span class="tag">Family Law</span><span class="tag">Immigration</span>
+          <span class="tag">Estate Planning</span><span class="tag">Criminal Defense</span>
+        </div>
+        <div class="value">Intake speed is consistently tied to case value in client-acquisition research</div>
+      </div>
+      <div class="industry-card">
+        <div class="industry-card-head">
+          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>
+          <h3 style="margin:0">Real Estate</h3>
+        </div>
+        <p style="color:var(--text-muted)">Showings, listing questions, and lead qualification don't stop at 6pm in this market.</p>
+        <div class="tags">
+          <span class="tag">Residential Sales</span><span class="tag">Property Management</span><span class="tag">Leasing</span>
+          <span class="tag">Short-Term Rentals</span><span class="tag">Mortgage &amp; Lending</span>
+        </div>
+        <div class="value">Bay Area home values make every lead worth qualifying carefully <a href="resources/ai-receptionist-vs-answering-service.html">(source)</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Why LLM Perfected</span>
+    <h2>How this compares to the alternatives</h2>
+    <p class="lead">An honest look at the three ways most small businesses handle this today.</p>
+    <p class="compare-hint">↔ Swipe sideways to see the full comparison</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <caption>Comparison based on commonly advertised features of self-serve AI apps and typical human answering-service contracts, not a specific named competitor's current rate card.</caption>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" class="col-us"><span class="col-us-label">LLM Perfected <span class="badge-best">Built for you</span></span></th>
+            <th scope="col">Self-Serve AI App</th>
+            <th scope="col">Human Answering Service</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Setup &amp; tuning</td>
+            <td class="col-us"><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Done for you, call-by-call</span></td>
+            <td><span class="yn partial"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Self-configured templates</span></td>
+            <td><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Scripted by their team</span></td>
+          </tr>
+          <tr>
+            <td>Bilingual (EN/ES)</td>
+            <td class="col-us"><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Included</span></td>
+            <td><span class="yn no"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg> Often an add-on or unavailable</span></td>
+            <td><span class="yn partial"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Depends on staffing</span></td>
+          </tr>
+          <tr>
+            <td>24/7 coverage</td>
+            <td class="col-us"><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Yes, every day</span></td>
+            <td><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Usually yes</span></td>
+            <td><span class="yn partial"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Often business hours only</span></td>
+          </tr>
+          <tr>
+            <td>Billing model</td>
+            <td class="col-us"><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Flat monthly, no contract to start</span></td>
+            <td><span class="yn partial"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Flat monthly, self-serve</span></td>
+            <td><span class="yn no"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg> Often per-minute or per-call</span></td>
+          </tr>
+          <tr>
+            <td>Ongoing tuning</td>
+            <td class="col-us"><span class="yn yes"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> We adjust it as your business changes</span></td>
+            <td><span class="yn no"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg> You maintain it yourself</span></td>
+            <td><span class="yn partial"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Requires a new request each time</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section-sunken" id="reviews">
+  <div class="wrap">
+    <span class="eyebrow">Client Scenarios</span>
+    <h2>What business owners are telling us they need</h2>
+    <p class="lead">We're early — these are composite scenarios drawn from pilot conversations and discovery calls, not attributed quotes from named customers. We'd rather tell you that plainly than dress up placeholders as reviews.</p>
+    <div class="proof-grid">
+      <div class="proof-card">
+        <span class="quote-mark">"</span>
+        <p class="quote">We were losing jobs every weekend because nobody could pick up while we were on a roof. Just having every call answered immediately would change our close rate.</p>
+        <div class="proof-attrib">Composite scenario — HVAC contractor, South Bay</div>
+      </div>
+      <div class="proof-card">
+        <span class="quote-mark">"</span>
+        <p class="quote">Half our new patients call in Spanish first. If the front desk can't handle that smoothly, we've already lost them before they book.</p>
+        <div class="proof-attrib">Composite scenario — dental practice, Daly City</div>
+      </div>
+      <div class="proof-card">
+        <span class="quote-mark">"</span>
+        <p class="quote">Our biggest leak wasn't missed calls, it was leads we never followed up on after the first no. We needed that to just happen automatically.</p>
+        <div class="proof-attrib">Composite scenario — real estate team, Peninsula</div>
+      </div>
+    </div>
+    <p class="proof-disclosure">These are illustrative scenarios built from discovery conversations with Bay Area business owners, not verified testimonials from paying clients. We'll replace these with real, attributed reviews as pilot clients come online — we won't publish fabricated reviews in the meantime.</p>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <span class="eyebrow">Pricing</span>
+    <h2>AI receptionist pricing: flat monthly, no per-minute surprises</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <div class="price-amount">$347<span>/mo</span></div>
+        <div class="price-setup">$900 one-time setup</div>
+        <ul class="price-feats">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> AI call answering, 24/7</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Calendar booking</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> English &amp; Spanish</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Monthly call review</li>
+        </ul>
+        <a class="btn btn-ghost" href="#contact">Start a pilot</a>
+      </div>
+      <div class="price-card popular">
+        <h3>Full Front Office</h3>
+        <div class="price-amount">$697<span>/mo</span></div>
+        <div class="price-setup">$1,800 one-time setup</div>
+        <ul class="price-feats">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Everything in Starter</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lead follow-up sequences</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Estimates &amp; invoicing automation</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Internal AI assistant for your team</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Biweekly tuning calls</li>
+        </ul>
+        <a class="btn btn-primary" href="#contact">Start a pilot</a>
+      </div>
+      <div class="price-card">
+        <h3>Custom</h3>
+        <div class="price-amount">Let's talk</div>
+        <div class="price-setup">For multi-location or high-volume teams</div>
+        <ul class="price-feats">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Multi-location routing</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Custom integrations</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Custom AI agents for your specific workflows</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Dedicated tuning support</li>
+        </ul>
+        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-elevated" id="resources">
+  <div class="wrap">
+    <span class="eyebrow">Resources</span>
+    <h2>Research behind the numbers we cite</h2>
+    <div class="resource-grid">
+      <div class="resource-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <h3>The Real Cost of a Missed Call</h3>
+        <p style="color:var(--text-muted);font-size:.9rem">What missed-call rates actually mean in lost revenue for a home-services business.</p>
+        <a class="resource-link" href="resources/cost-of-a-missed-call.html">Read the white paper →</a>
+      </div>
+      <div class="resource-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
+        <h3>AI Receptionist vs. Human Answering Service</h3>
+        <p style="color:var(--text-muted);font-size:.9rem">A side-by-side look at coverage, cost structure, and tuning for each option.</p>
+        <a class="resource-link" href="resources/ai-receptionist-vs-answering-service.html">Read the white paper →</a>
+      </div>
+      <div class="resource-card">
+        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Bilingual Answering Service in the Bay Area</h3>
+        <p style="color:var(--text-muted);font-size:.9rem">What the region's language data means for how you answer the phone.</p>
+        <a class="resource-link" href="resources/bilingual-answering-service-bay-area.html">Read the white paper →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2>Frequently asked questions about our AI receptionist</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is an AI receptionist? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>An AI receptionist is software that answers incoming business calls in place of (or alongside) a human front desk — picking up, understanding what the caller needs, booking appointments directly onto a calendar, answering routine questions, and escalating anything it can't handle to a real person. LLM Perfected configures one specifically around a client's own services, pricing, and scheduling rules rather than running a generic script.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much does an AI receptionist cost? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>At LLM Perfected, flat monthly pricing runs $347–$697/mo depending on plan, plus a one-time setup fee ($900–$1,800), with custom pricing for multi-location or high-volume teams. That's flat-rate, not the per-minute billing common with traditional human answering services. See the full plan breakdown in the <a href="#pricing">pricing section</a> above.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How fast can LLM Perfected be live for my business? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>Most Bay Area clients are live within 5–7 business days of signing. We script your call flows, connect your calendar and CRM, and run a review call with you before anything goes live to real customers.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What happens when the AI can't handle a call? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>Every call flow includes escalation rules you set. Calls that need a human — a complaint, a complex quote, anything outside the script — are routed to your cell, a teammate, or a message queue, never left hanging.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does it work in Spanish as well as English? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>Yes. English and Spanish are supported out of the box and the system can detect which language a caller is using and respond in kind, without a separate phone line.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is this the same as a generic chatbot or voice AI app? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>No. Off-the-shelf AI apps are built for the average user. We configure your scripts, booking rules, and escalation paths specifically for your business before launch, and keep tuning them as your business changes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will customers know they're talking to an AI? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>We disclose it when asked or when required, and we design conversations to be direct and useful rather than to disguise what it is. The goal is a fast, accurate answer, not a trick.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does setup actually involve on my end? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>A 30–45 minute kickoff call to map your services, pricing, and calendar rules, plus access to the scheduling tool you already use. We build the call flows; you review and approve them before launch.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you build AI agents for things other than answering the phone? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></summary>
+        <p>Yes. The AI receptionist is our most requested agent, but we also build agents for sales qualification, outbound follow-up, scheduling and dispatch, document and proposal drafting, recruiting, reputation management, and recurring research and reporting. We scope which ones actually make sense for your business before recommending any of them.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="final-cta">
+      <svg class="final-cta-decor" viewBox="0 0 300 300" aria-hidden="true">
+        <circle cx="150" cy="150" r="150" fill="var(--on-accent)"/>
+      </svg>
+      <h2>Stop losing jobs to a ringing phone.</h2>
+      <p class="lead" style="color:color-mix(in srgb, var(--on-accent) 85%, transparent);margin:0 auto">Get a free audit of your current call handling — we'll tell you what it's likely costing you before you commit to anything.</p>
+      <div class="hero-ctas" style="justify-content:center;margin-top:1.8em">
+        <a class="btn btn-on-accent" href="tel:+14152516201">Call (415) 251-6201</a>
+      </div>
+      <p class="trust-line">140 San Pedro Rd, Daly City, CA 94014 · No long-term contract required to start a pilot</p>
+    </div>
+
+    <form class="contact-form" id="leadForm" action="https://formspree.io/f/FORMSPREE_FORM_ID" method="POST">
+      <!-- SETUP REQUIRED: replace FORMSPREE_FORM_ID above with your real Formspree form ID.
+           Create a free form at https://formspree.io, verify the inbox email it should deliver
+           to, then paste the ID it gives you (the part after /f/) in place of FORMSPREE_FORM_ID.
+           Until replaced, this form will not submit anywhere. See delivery notes for setup steps. -->
+      <input type="hidden" name="_subject" value="New lead from llmperfected.com">
+      <h3 style="margin-bottom:4px">Request your free call audit</h3>
+      <p class="form-note" style="margin-bottom:10px">Tell us a bit about your business — we'll follow up with what a missed-call audit is likely to find before you commit to anything.</p>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="lf-name">Your name *</label>
+          <input type="text" id="lf-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="lf-business">Business name *</label>
+          <input type="text" id="lf-business" name="business_name" autocomplete="organization" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="lf-email">Email *</label>
+          <input type="email" id="lf-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="lf-phone">Phone</label>
+          <input type="tel" id="lf-phone" name="phone" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="lf-industry">Industry</label>
+          <select id="lf-industry" name="industry">
+            <option value="">Select one</option>
+            <option value="Home Services">Home Services</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Legal">Legal</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="lf-interest">What do you need help with?</label>
+          <select id="lf-interest" name="interest">
+            <option value="">Select one</option>
+            <option value="AI Receptionist / Front Office">AI Receptionist / Front Office</option>
+            <option value="Other AI Agents">Other AI Agents (sales, scheduling, docs, etc.)</option>
+            <option value="Website & Local SEO">Website &amp; Local SEO</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="lf-message">Tell us about your business</label>
+        <textarea id="lf-message" name="message" placeholder="What does a typical call sound like? How many are you missing?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" id="leadFormSubmit">Request your free call audit</button>
+      <p class="form-note">Prefer to just call? <a href="tel:+14152516201">(415) 251-6201</a> works too.</p>
+      <div class="form-status" id="leadFormStatus" role="status"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:12px;display:inline-block">LLM<span class="dot">.</span>PERFECTED</a>
+        <p style="color:var(--text-muted);font-size:.92rem;max-width:280px">AI-powered front office for Bay Area small businesses — call answering, booking, and follow-up that never clocks out.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Industries</h4>
+        <ul>
+          <li><a href="#industries">Home Services</a></li>
+          <li><a href="#industries">Healthcare</a></li>
+          <li><a href="#industries">Legal</a></li>
+          <li><a href="#industries">Real Estate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#contact">Contact us</a></li>
+          <li><a href="tel:+14152516201">(415) 251-6201</a></li>
+          <li>140 San Pedro Rd<br>Daly City, CA 94014</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> LLM Perfected. All rights reserved.</span>
+      <span><a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span>
+      <span>Serving SF · Daly City · Oakland · San Jose · The Peninsula</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  var iconUse = document.getElementById('navToggleIcon').querySelector('use');
+  if(!toggle || !links || !iconUse) return;
+  function closeMenu(){
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded','false');
+    iconUse.setAttribute('href','#i-menu');
+  }
+  function openMenu(){
+    links.classList.add('open');
+    toggle.setAttribute('aria-expanded','true');
+    iconUse.setAttribute('href','#i-x');
+  }
+  toggle.addEventListener('click', function(e){
+    e.stopPropagation();
+    if(links.classList.contains('open')) closeMenu(); else openMenu();
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('click', function(e){
+    if(!links.contains(e.target) && !toggle.contains(e.target)) closeMenu();
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 860) closeMenu();
+  });
+})();
+
+(function(){
+  var missed = document.getElementById('missed');
+  var job = document.getElementById('job');
+  var close = document.getElementById('close');
+  var missedOut = document.getElementById('missedOut');
+  var jobOut = document.getElementById('jobOut');
+  var closeOut = document.getElementById('closeOut');
+  var weeklyLoss = document.getElementById('weeklyLoss');
+  var monthlyLoss = document.getElementById('monthlyLoss');
+  var annualGain = document.getElementById('annualGain');
+
+  function fmt(n){
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function recalc(){
+    var m = parseInt(missed.value, 10);
+    var j = parseInt(job.value, 10);
+    var c = parseInt(close.value, 10) / 100;
+    missedOut.textContent = m;
+    jobOut.textContent = '$' + j.toLocaleString('en-US');
+    closeOut.textContent = (c*100) + '%';
+    var weekly = m * j * c;
+    var monthly = weekly * 4.33;
+    var annual = monthly * 12 * 0.6; // conservative recovery assumption, not 100%
+    weeklyLoss.textContent = fmt(weekly);
+    monthlyLoss.textContent = fmt(monthly);
+    annualGain.textContent = fmt(annual);
+  }
+  [missed, job, close].forEach(function(el){ el.addEventListener('input', recalc); });
+  recalc();
+})();
+</script>
+
+<script>
+/* Conversion-event scaffolding for GA4 / Google Ads via GTM.
+   Pushes to dataLayer only — fires no network requests on its own.
+   Once a real GTM container (see head snippet) is connected, build GA4/Ads
+   tags in GTM triggered on these custom events: generate_lead, cta_click. */
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener('click', function(e){
+    var el = e.target.closest('a, button');
+    if(!el) return;
+    var href = el.getAttribute('href') || '';
+    if(href.indexOf('tel:') === 0){
+      window.dataLayer.push({event:'generate_lead', lead_type:'phone_call', link_url:href});
+    } else if(href.indexOf('mailto:') === 0){
+      window.dataLayer.push({event:'generate_lead', lead_type:'email_click', link_url:href});
+    } else if(el.classList.contains('btn-primary')){
+      window.dataLayer.push({event:'cta_click', cta_label:(el.textContent||'').trim()});
+    }
+  }, true);
+})();
+</script>
+
+<script>
+/* Lead form submission (Formspree, AJAX). Requires the real form ID to be
+   swapped into the form's action= attribute above — see the SETUP REQUIRED
+   comment just above the form markup. Until then, submitting shows the
+   error state below rather than silently failing. */
+(function(){
+  var form = document.getElementById('leadForm');
+  if(!form) return;
+  var status = document.getElementById('leadFormStatus');
+  var submitBtn = document.getElementById('leadFormSubmit');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if(form.action.indexOf('FORMSPREE_FORM_ID') !== -1){
+      status.className = 'form-status error';
+      status.textContent = 'This form isn’t connected yet — a real Formspree form ID needs to replace the placeholder in the page source before submissions can be received. In the meantime, call (415) 251-6201.';
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    status.className = 'form-status';
+    status.textContent = '';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response){
+      if(response.ok){
+        status.className = 'form-status success';
+        status.textContent = 'Thanks — we’ll follow up shortly with what your missed-call audit is likely to find.';
+        form.reset();
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({event:'generate_lead', lead_type:'form_submit'});
+      } else {
+        return response.json().then(function(data){
+          var msg = (data && data.errors && data.errors.length) ? data.errors.map(function(x){return x.message;}).join(', ') : 'Something went wrong submitting the form.';
+          status.className = 'form-status error';
+          status.textContent = msg + ' You can also call (415) 251-6201.';
+        });
+      }
+    }).catch(function(){
+      status.className = 'form-status error';
+      status.textContent = 'Something went wrong submitting the form. Please call (415) 251-6201 instead.';
+    }).finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request your free call audit';
+    });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+User-agent: *
+Allow: /
+
+# AI search / answer-engine crawlers — explicitly allowed below for clarity.
+# Each one is already permitted by the "User-agent: *" rule above; these
+# groups just make that intent explicit and auditable rather than relying
+# on the default, and let each one be tuned independently later if needed.
+# Sources (checked when this file was last updated):
+# - OpenAI: https://developers.openai.com/docs/bots
+# - Anthropic: https://support.claude.com/en/articles/8896518
+# - Perplexity: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
+# - Google: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers
+
+# OpenAI — surfaces this site in ChatGPT search results
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — fetches a page when a user asks ChatGPT about it directly
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI — crawls content for training OpenAI's models (separate opt-in from search)
+User-agent: GPTBot
+Allow: /
+
+# Anthropic — crawls for Claude's web search / answer relevance
+User-agent: Claude-SearchBot
+Allow: /
+
+# Anthropic — fetches a page when a Claude user asks about it directly
+User-agent: Claude-User
+Allow: /
+
+# Anthropic — crawls content for training Claude models (separate opt-in from search)
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity — surfaces and links this site in Perplexity's answers
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity — fetches a page when a user's question needs it directly
+User-agent: Perplexity-User
+Allow: /
+
+# Google — controls use of crawled content for training/grounding Gemini
+# models (separate from standard Google Search indexing, which Googlebot
+# already covers under the default rule above)
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.llmperfected.com/sitemap.xml

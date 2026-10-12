@@ -1,0 +1,7 @@
+# Internal working files — not part of the deployed site
+report/
+*.zip
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

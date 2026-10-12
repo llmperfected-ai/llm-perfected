@@ -1,0 +1,30 @@
+# LLM Perfected
+
+> AI-powered front office for Bay Area small businesses: a configured AI receptionist that answers every call 24/7 in English or Spanish, books appointments, follows up on leads, and escalates anything it can't handle to a real person. Also builds related AI agents (sales qualification, scheduling, document drafting, recruiting, reputation management) and offers website design and local SEO.
+
+Headquartered at 140 San Pedro Rd, Daly City, CA 94014. Phone: +1-415-251-6201. Email: sales@llmperfected.com. Serves businesses across the San Francisco Bay Area, including San Francisco, Daly City, Oakland, San Jose, and the greater Peninsula.
+
+Flat monthly pricing: $347/mo (Starter) to $697/mo (Full Front Office), plus a one-time setup fee of $900-$1,800, with custom pricing for multi-location or high-volume teams — not per-minute billing.
+
+## Main pages
+
+- [Homepage](https://www.llmperfected.com/): Full service overview, pricing, FAQ, industries served, and comparison with alternatives.
+- [About](https://www.llmperfected.com/about.html): Why the company focuses on the Bay Area and how it operates.
+
+## Research and comparisons
+
+- [The Real Cost of a Missed Call](https://www.llmperfected.com/resources/cost-of-a-missed-call.html): Sourced data on missed-call rates and revenue impact for home-services businesses, with a worked Bay Area example.
+- [AI Receptionist vs. Human Answering Service](https://www.llmperfected.com/resources/ai-receptionist-vs-answering-service.html): Side-by-side comparison of AI receptionists, self-serve AI apps, and traditional human answering services.
+- [Bilingual Answering Service in the Bay Area](https://www.llmperfected.com/resources/bilingual-answering-service-bay-area.html): Census-sourced language data explaining why bilingual (English/Spanish) call handling matters in this region.
+
+## Local guides (home services industry)
+
+- [Daly City](https://www.llmperfected.com/industries/home-services/daly-city.html): AI receptionist details for Daly City HVAC, plumbing, electrical, and appliance repair businesses.
+- [San Francisco](https://www.llmperfected.com/industries/home-services/san-francisco.html): Same, for San Francisco.
+- [Oakland](https://www.llmperfected.com/industries/home-services/oakland.html): Same, for Oakland.
+- [San Jose](https://www.llmperfected.com/industries/home-services/san-jose.html): Same, for San Jose.
+
+## Optional
+
+- [Privacy Policy](https://www.llmperfected.com/privacy.html)
+- [Terms of Service](https://www.llmperfected.com/terms.html)
