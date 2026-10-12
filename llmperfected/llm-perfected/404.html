@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Consent Mode v2 — default state set BEFORE Tag Manager loads below.
+     Defaults to "denied" for ad/analytics storage until a visitor consents, as required
+     for CA (CCPA/CPRA) visitors and for Google Ads/GA4 to work correctly with consent.
+     SETUP REQUIRED: wire the gtag('consent','update',...) call to your actual cookie/consent
+     banner's "accept" action once you choose one — see delivery report, GA4 section. -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied',
+  'wait_for_update': 500
+});
+</script>
+<!-- Google Tag Manager: SETUP REQUIRED — replace GTM-XXXXXXX with your real container ID.
+     Until replaced, this snippet loads nothing and tracks nothing. See delivery report for setup steps.
+     Keeping GTM on the 404 page is deliberate: broken-link hits are useful data once connected. -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#F7F5F0">
+<meta name="theme-color" content="#121A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Page Not Found | LLM Perfected</title>
+<meta name="description" content="The page you're looking for doesn't exist or has moved.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<style>
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--accent-deep,#0E3E68);color:#fff;padding:12px 18px;border-radius:0 0 10px 0;z-index:999;font-size:.9rem;text-decoration:none;}
+.skip-link:focus{left:0;}
+:root{--bg:#F7F5F0;--bg-elevated:#FFFFFF;--text:#1A2733;--text-muted:#54606B;--border:#DCD6C9;--accent:#15578F;--accent-deep:#0E3E68;--font-display:'Sora',sans-serif;--font-body:'IBM Plex Sans',sans-serif;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121A22;--bg-elevated:#1A2530;--text:#EDF1F4;--text-muted:#A8B4BE;--border:#2C3A47;--accent:#3B9EDE;--accent-deep:#2679AE;}}
+:root[data-theme="dark"]{--bg:#121A22;--bg-elevated:#1A2530;--text:#EDF1F4;--text-muted:#A8B4BE;--border:#2C3A47;--accent:#3B9EDE;--accent-deep:#2679AE;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.7;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;}
+.wrap{max-width:520px;margin:0 auto;padding:60px 24px;}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(3rem,10vw,5rem);margin:0;color:var(--accent-deep);}
+h2{font-family:var(--font-display);font-weight:700;font-size:1.4rem;margin:.3em 0 .6em;}
+p{color:var(--text-muted);margin-bottom:1.8em;}
+a.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent-deep);color:#fff;font-weight:600;padding:14px 26px;border-radius:999px;text-decoration:none;}
+a.btn:hover{background:var(--accent);}
+.links{margin-top:2em;font-size:.9rem;}
+.links a{display:inline-block;padding:8px;color:var(--accent-deep);text-decoration:underline;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<main id="main">
+<div class="wrap">
+  <h1>404</h1>
+  <h2>That page doesn't exist</h2>
+  <p>The link may be outdated, or the page may have moved. Here's how to get back on track.</p>
+  <a class="btn" href="/">Back to the homepage</a>
+  <div class="links">
+    <a href="/#services">Services</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/#faq">FAQ</a>
+    <a href="/#contact">Contact us</a>
+  </div>
+</div>
+</main>
+<script>
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({event:'404_error', page_path: window.location.pathname});
+})();
+</script>
+</body>
+</html>
