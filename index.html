@@ -32,7 +32,6 @@ gtag('consent', 'default', {
 <meta name="google-site-verification" content="REPLACE_WITH_YOUR_VERIFICATION_CODE">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#F7F5F0">
-<meta name="theme-color" content="#121A22" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>AI Receptionist for Bay Area Small Businesses | LLM Perfected</title>
 <meta name="description" content="24/7 AI receptionist for Bay Area small businesses — call answering, booking & lead follow-up for home services, healthcare, legal & real estate.">
@@ -153,48 +152,7 @@ gtag('consent', 'default', {
   --font-body:'IBM Plex Sans',system-ui,sans-serif;
   --font-mono:'IBM Plex Mono',monospace;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#121A22;
-    --bg-elevated:#1A2530;
-    --bg-sunken:#0D1419;
-    --text:#EDF1F4;
-    --text-muted:#A8B4BE;
-    --border:#2C3A47;
-    --border-strong:#44535F;
-    --accent:#3B9EDE;
-    --accent-bright:#4CACE8;
-    --accent-deep:#2679AE;
-    --on-accent:#06151F;
-    --accent-soft:#1D3243;
-    --secondary:#4FBE9B;
-    --secondary-soft:#163429;
-    --warn:#E0A357;
-    --warn-soft:#3A2A15;
-    --shadow:0 18px 40px -20px rgba(0,0,0,.6);
-    --shadow-sm:0 6px 16px -8px rgba(0,0,0,.55);
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#121A22;
-  --bg-elevated:#1A2530;
-  --bg-sunken:#0D1419;
-  --text:#EDF1F4;
-  --text-muted:#A8B4BE;
-  --border:#2C3A47;
-  --border-strong:#44535F;
-  --accent:#3B9EDE;
-  --accent-bright:#4CACE8;
-  --accent-deep:#2679AE;
-  --on-accent:#06151F;
-  --accent-soft:#1D3243;
-  --secondary:#4FBE9B;
-  --secondary-soft:#163429;
-  --warn:#E0A357;
-  --warn-soft:#3A2A15;
-  --shadow:0 18px 40px -20px rgba(0,0,0,.6);
-  --shadow-sm:0 6px 16px -8px rgba(0,0,0,.55);
-}
+
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{
@@ -230,8 +188,7 @@ section{padding:76px 0;}
 /* nav */
 nav.site-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
 .nav-inner{position:relative;max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
-.brand{display:flex;align-items:center;gap:.6em;font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em;text-decoration:none;}
-.brand .dot{color:var(--accent);}
+.brand{display:inline-flex;align-items:center;font-family:var(--font-display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em;text-decoration:none;}
 .nav-links{display:flex;align-items:center;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem;}
 .nav-links a{text-decoration:none;color:var(--text-muted);font-weight:500;}
 .nav-links a:hover{color:var(--accent);}
@@ -265,8 +222,8 @@ nav.site-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.6em;}
 .hero-cta-note{font-size:.85rem;color:var(--text-muted);margin-top:.9em;}
 .hero-facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:2em;padding-top:1.6em;border-top:1px solid var(--border);}
-.hero-fact{display:flex;align-items:center;gap:.6em;font-size:.88rem;color:var(--text-muted);}
-.hero-fact .icon{color:var(--secondary);width:1.1em;height:1.1em;}
+.hero-fact{display:flex;align-items:flex-start;gap:.6em;font-size:.88rem;color:var(--text-muted);}
+.hero-fact .icon{color:var(--secondary);width:1.1em;height:1.1em;margin-top:.3em;flex-shrink:0;}
 .hero-panel{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;}
 .hero-panel-head{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--border);background:var(--bg-sunken);}
 .hero-panel-head .eyebrow{margin:0;}
@@ -281,9 +238,9 @@ nav.site-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(
 
 /* trust strip */
 .trust-strip{padding:34px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-elevated);}
-.trust-row{display:flex;flex-wrap:wrap;gap:22px 36px;align-items:center;justify-content:center;}
-.trust-item{display:flex;align-items:center;gap:.6em;font-size:.88rem;color:var(--text-muted);font-weight:500;}
-.trust-item .icon{color:var(--accent);}
+.trust-row{display:flex;flex-wrap:wrap;gap:22px 36px;align-items:flex-start;justify-content:center;}
+.trust-item{display:flex;align-items:flex-start;gap:.6em;font-size:.88rem;color:var(--text-muted);font-weight:500;}
+.trust-item .icon{color:var(--accent);margin-top:.3em;flex-shrink:0;}
 .trust-item a{text-decoration:underline;text-decoration-color:var(--border-strong);}
 
 /* services overview */
@@ -445,6 +402,7 @@ details.faq-item p{color:var(--text-muted);margin-top:12px;}
 /* contact form */
 .contact-form{display:grid;gap:16px;text-align:left;background:var(--bg-elevated);color:var(--text);border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:34px;max-width:680px;margin:-34px auto 0;position:relative;z-index:2;}
 @media (max-width:640px){.contact-form{padding:24px;margin-top:-22px;}}
+.form-hp{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 @media (max-width:560px){.form-row{grid-template-columns:1fr;}}
 .form-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
@@ -507,7 +465,7 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a class="brand" href="#top">LLM<span class="dot">.</span>PERFECTED</a>
+    <a class="brand" href="#top">LLM PERFECTED</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#industries">Industries</a></li>
@@ -557,19 +515,15 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
       </div>
       <ul class="call-feed">
         <li>
-          <span class="icon-wrap ok"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
           <div><div class="title">Booked: AC tune-up, Thursday 2pm</div><div class="meta">Daly City · caller spoke Spanish</div></div>
         </li>
         <li>
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
           <div><div class="title">After-hours call answered in 2 rings</div><div class="meta">San Jose · 9:47 PM</div></div>
         </li>
         <li>
-          <span class="icon-wrap ok"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
           <div><div class="title">Follow-up text sent to unresolved lead</div><div class="meta">Oakland · auto-sequence</div></div>
         </li>
         <li>
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
           <div><div class="title">Escalated to on-call tech</div><div class="meta">Complex quote request</div></div>
         </li>
       </ul>
@@ -595,49 +549,46 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <div class="services-grid">
       <div class="service-cat">
         <div class="service-cat-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
           <h3 style="margin:0">AI Front Office</h3>
         </div>
         <p class="cat-desc">The core call-handling system most clients start with.</p>
         <ul class="service-list">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> AI Receptionist (24/7, English &amp; Spanish)</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Automated Scheduling</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lead Follow-Up</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Estimates &amp; Proposals</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Invoicing Automation</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Internal AI Assistants</li>
+          <li>AI Receptionist (24/7, English &amp; Spanish)</li>
+          <li>Automated Scheduling</li>
+          <li>Lead Follow-Up</li>
+          <li>Estimates &amp; Proposals</li>
+          <li>Invoicing Automation</li>
+          <li>Internal AI Assistants</li>
         </ul>
         <a class="jump-link" href="#work">See Front Office details →</a>
       </div>
       <div class="service-cat">
         <div class="service-cat-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg></span>
           <h3 style="margin:0">AI Agents for Business</h3>
         </div>
         <p class="cat-desc">Custom agents for the repetitive work beyond the phone.</p>
         <ul class="service-list">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Customer Support Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Sales Qualification Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Outbound Follow-Up Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Scheduling &amp; Dispatch Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Document &amp; Proposal Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Recruiting &amp; Onboarding Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Reputation &amp; Review Agent</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Research &amp; Reporting Agent</li>
+          <li>Customer Support Agent</li>
+          <li>Sales Qualification Agent</li>
+          <li>Outbound Follow-Up Agent</li>
+          <li>Scheduling &amp; Dispatch Agent</li>
+          <li>Document &amp; Proposal Agent</li>
+          <li>Recruiting &amp; Onboarding Agent</li>
+          <li>Reputation &amp; Review Agent</li>
+          <li>Research &amp; Reporting Agent</li>
         </ul>
         <a class="jump-link" href="#ai-agents">See AI Agents details →</a>
       </div>
       <div class="service-cat">
         <div class="service-cat-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
           <h3 style="margin:0">Beyond the Phone</h3>
         </div>
         <p class="cat-desc">The rest of your digital front door, handled for you.</p>
         <ul class="service-list">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Website Design &amp; Build</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Local SEO &amp; Google Business Profile</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Marketing Automation (Email &amp; SMS)</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> CRM &amp; Business Tools Setup</li>
+          <li>Website Design &amp; Build</li>
+          <li>Local SEO &amp; Google Business Profile</li>
+          <li>Marketing Automation (Email &amp; SMS)</li>
+          <li>CRM &amp; Business Tools Setup</li>
         </ul>
         <a class="jump-link" href="#beyond">See Beyond the Phone details →</a>
       </div>
@@ -657,17 +608,14 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <p class="lead">These numbers are a worked example based on typical call volumes we see, not a real-time counter. Use the calculator below to estimate your own numbers.</p>
     <div class="stats-grid">
       <div class="stat-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
         <div class="stat-num">214</div>
         <div class="stat-label">calls answered in a month</div>
       </div>
       <div class="stat-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
         <div class="stat-num">58</div>
         <div class="stat-label">appointments booked directly</div>
       </div>
       <div class="stat-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
         <div class="stat-num">$12,480</div>
         <div class="stat-label">in jobs recovered from after-6pm calls</div>
       </div>
@@ -712,32 +660,26 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <p class="lead">Six connected pieces, configured around your business, your calendar, and your pricing.</p>
     <div class="feature-grid">
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
         <h3>AI Receptionist</h3>
         <p>Answers every call in your business's voice, in English or Spanish, 24 hours a day.</p>
       </div>
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
         <h3>Automated Scheduling</h3>
         <p>Books directly into the calendar you already use, respecting your real availability and buffers.</p>
       </div>
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
         <h3>Lead Follow-Up</h3>
         <p>Texts and calls back leads who didn't convert the first time, on a schedule you set.</p>
       </div>
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
         <h3>Estimates &amp; Proposals</h3>
         <p>Sends standardized quotes based on the details captured during the call.</p>
       </div>
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-invoice"/></svg></span>
         <h3>Invoicing Automation</h3>
         <p>Triggers invoices and payment reminders once a job is marked complete.</p>
       </div>
       <div class="feature-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
         <h3>Internal AI Assistants</h3>
         <p>Lets your team ask questions about jobs, customers, and schedules in plain language.</p>
       </div>
@@ -752,42 +694,34 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <p class="lead">The AI receptionist above is one agent. Most businesses end up running several, each handling one repetitive job so your team doesn't have to.</p>
     <div class="agent-grid">
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
         <h3>Customer Support Agent</h3>
         <p>Handles website chat and routine email questions instantly, 24/7.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
         <h3>Sales Qualification Agent</h3>
         <p>Scores and routes inbound leads so your team only calls back the ones worth calling.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
         <h3>Outbound Follow-Up Agent</h3>
         <p>Calls or texts cold leads, past customers, or no-shows to re-engage them automatically.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
         <h3>Scheduling &amp; Dispatch Agent</h3>
         <p>Assigns jobs to the right technician based on location, skill, and availability.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
         <h3>Document &amp; Proposal Agent</h3>
         <p>Drafts quotes, contracts, and proposals from the details captured on a call or form.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>
         <h3>Recruiting &amp; Onboarding Agent</h3>
         <p>Screens applicants, schedules interviews, and walks new hires through onboarding steps.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
         <h3>Reputation &amp; Review Agent</h3>
         <p>Requests reviews after a job is done and flags negative feedback before it goes public.</p>
       </div>
       <div class="agent-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
         <h3>Research &amp; Reporting Agent</h3>
         <p>Pulls together competitor pricing, market data, or weekly performance summaries on a schedule.</p>
       </div>
@@ -803,28 +737,24 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <p class="lead">Services we commonly pair with the AI agents above, so the rest of your online presence matches the quality of your call handling.</p>
     <div class="beyond-grid">
       <div class="beyond-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
         <div>
           <h3>Website Design &amp; Build</h3>
           <p style="color:var(--text-muted);margin:0">A fast, mobile-first site that matches how people actually search for your business, with booking and quote requests built in.</p>
         </div>
       </div>
       <div class="beyond-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
         <div>
           <h3>Local SEO &amp; Google Business Profile</h3>
           <p style="color:var(--text-muted);margin:0">Cleaned-up listings and review responses so you show up for "near me" searches.</p>
         </div>
       </div>
       <div class="beyond-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
         <div>
           <h3>Marketing Automation (Email &amp; SMS)</h3>
           <p style="color:var(--text-muted);margin:0">Automated email and text campaigns that bring past customers back without anyone manually sending a follow-up.</p>
         </div>
       </div>
       <div class="beyond-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-invoice"/></svg></span>
         <div>
           <h3>CRM &amp; Business Tools Setup</h3>
           <p style="color:var(--text-muted);margin:0">We set up and connect the CRM, payments, and scheduling tools you already use, so every system actually talks to each other.</p>
@@ -870,7 +800,6 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <div class="industry-grid">
       <div class="industry-card">
         <div class="industry-card-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span>
           <h3 style="margin:0">Home Services</h3>
         </div>
         <p style="color:var(--text-muted)">HVAC, plumbing, electrical, and appliance repair crews lose the most revenue to calls that go unanswered mid-job.</p>
@@ -883,7 +812,6 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
       </div>
       <div class="industry-card">
         <div class="industry-card-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-cross-med"/></svg></span>
           <h3 style="margin:0">Healthcare</h3>
         </div>
         <p style="color:var(--text-muted)">Clinics and practices need intake that's accurate the first time and never puts a patient on hold indefinitely.</p>
@@ -895,7 +823,6 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
       </div>
       <div class="industry-card">
         <div class="industry-card-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-scale"/></svg></span>
           <h3 style="margin:0">Legal</h3>
         </div>
         <p style="color:var(--text-muted)">A missed intake call for a personal-injury or family-law firm can mean a missed case, not just a missed appointment.</p>
@@ -907,7 +834,6 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
       </div>
       <div class="industry-card">
         <div class="industry-card-head">
-          <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>
           <h3 style="margin:0">Real Estate</h3>
         </div>
         <p style="color:var(--text-muted)">Showings, listing questions, and lead qualification don't stop at 6pm in this market.</p>
@@ -979,25 +905,25 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
   <div class="wrap">
     <span class="eyebrow">Client Scenarios</span>
     <h2>What business owners are telling us they need</h2>
-    <p class="lead">We're early — these are composite scenarios drawn from pilot conversations and discovery calls, not attributed quotes from named customers. We'd rather tell you that plainly than dress up placeholders as reviews.</p>
+    <p class="lead">We're early — these are illustrative examples based on real conversations with Bay Area business owners, not quotes from actual named customers. We'd rather tell you that plainly than dress up placeholders as reviews.</p>
     <div class="proof-grid">
       <div class="proof-card">
         <span class="quote-mark">"</span>
         <p class="quote">We were losing jobs every weekend because nobody could pick up while we were on a roof. Just having every call answered immediately would change our close rate.</p>
-        <div class="proof-attrib">Composite scenario — HVAC contractor, South Bay</div>
+        <div class="proof-attrib">Illustrative example — HVAC contractor, South Bay</div>
       </div>
       <div class="proof-card">
         <span class="quote-mark">"</span>
         <p class="quote">Half our new patients call in Spanish first. If the front desk can't handle that smoothly, we've already lost them before they book.</p>
-        <div class="proof-attrib">Composite scenario — dental practice, Daly City</div>
+        <div class="proof-attrib">Illustrative example — dental practice, Daly City</div>
       </div>
       <div class="proof-card">
         <span class="quote-mark">"</span>
         <p class="quote">Our biggest leak wasn't missed calls, it was leads we never followed up on after the first no. We needed that to just happen automatically.</p>
-        <div class="proof-attrib">Composite scenario — real estate team, Peninsula</div>
+        <div class="proof-attrib">Illustrative example — real estate team, Peninsula</div>
       </div>
     </div>
-    <p class="proof-disclosure">These are illustrative scenarios built from discovery conversations with Bay Area business owners, not verified testimonials from paying clients. We'll replace these with real, attributed reviews as pilot clients come online — we won't publish fabricated reviews in the meantime.</p>
+    <p class="proof-disclosure">These are illustrative examples built from discovery conversations with Bay Area business owners, not verified testimonials from paying clients. We'll replace these with real, attributed reviews as pilot clients come online — we won't publish fabricated reviews in the meantime.</p>
   </div>
 </section>
 
@@ -1011,10 +937,10 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
         <div class="price-amount">$347<span>/mo</span></div>
         <div class="price-setup">$900 one-time setup</div>
         <ul class="price-feats">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> AI call answering, 24/7</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Calendar booking</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> English &amp; Spanish</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Monthly call review</li>
+          <li>AI call answering, 24/7</li>
+          <li>Calendar booking</li>
+          <li>English &amp; Spanish</li>
+          <li>Monthly call review</li>
         </ul>
         <a class="btn btn-ghost" href="#contact">Start a pilot</a>
       </div>
@@ -1023,11 +949,11 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
         <div class="price-amount">$697<span>/mo</span></div>
         <div class="price-setup">$1,800 one-time setup</div>
         <ul class="price-feats">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Everything in Starter</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Lead follow-up sequences</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Estimates &amp; invoicing automation</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Internal AI assistant for your team</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Biweekly tuning calls</li>
+          <li>Everything in Starter</li>
+          <li>Lead follow-up sequences</li>
+          <li>Estimates &amp; invoicing automation</li>
+          <li>Internal AI assistant for your team</li>
+          <li>Biweekly tuning calls</li>
         </ul>
         <a class="btn btn-primary" href="#contact">Start a pilot</a>
       </div>
@@ -1036,10 +962,10 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
         <div class="price-amount">Let's talk</div>
         <div class="price-setup">For multi-location or high-volume teams</div>
         <ul class="price-feats">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Multi-location routing</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Custom integrations</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Custom AI agents for your specific workflows</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Dedicated tuning support</li>
+          <li>Multi-location routing</li>
+          <li>Custom integrations</li>
+          <li>Custom AI agents for your specific workflows</li>
+          <li>Dedicated tuning support</li>
         </ul>
         <a class="btn btn-ghost" href="#contact">Talk to us</a>
       </div>
@@ -1053,19 +979,16 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
     <h2>Research behind the numbers we cite</h2>
     <div class="resource-grid">
       <div class="resource-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
         <h3>The Real Cost of a Missed Call</h3>
         <p style="color:var(--text-muted);font-size:.9rem">What missed-call rates actually mean in lost revenue for a home-services business.</p>
         <a class="resource-link" href="resources/cost-of-a-missed-call.html">Read the white paper →</a>
       </div>
       <div class="resource-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-dollar"/></svg></span>
         <h3>AI Receptionist vs. Human Answering Service</h3>
         <p style="color:var(--text-muted);font-size:.9rem">A side-by-side look at coverage, cost structure, and tuning for each option.</p>
         <a class="resource-link" href="resources/ai-receptionist-vs-answering-service.html">Read the white paper →</a>
       </div>
       <div class="resource-card">
-        <span class="icon-wrap"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></span>
         <h3>Bilingual Answering Service in the Bay Area</h3>
         <p style="color:var(--text-muted);font-size:.9rem">What the region's language data means for how you answer the phone.</p>
         <a class="resource-link" href="resources/bilingual-answering-service-bay-area.html">Read the white paper →</a>
@@ -1135,6 +1058,12 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
 
     <form class="contact-form" id="leadForm" action="https://formspree.io/f/mnpjzwjj" method="POST">
       <input type="hidden" name="_subject" value="New lead from llmperfected.com">
+      <!-- Honeypot spam trap: left blank by real visitors, auto-filled by most bots.
+           Formspree (all plans) silently discards submissions where this is filled in. -->
+      <div class="form-hp" aria-hidden="true">
+        <label for="lf-company">Company</label>
+        <input type="text" id="lf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
       <h3 style="margin-bottom:4px">Request your free call audit</h3>
       <p class="form-note" style="margin-bottom:10px">Tell us a bit about your business — we'll follow up with what a missed-call audit is likely to find before you commit to anything.</p>
 
@@ -1202,7 +1131,7 @@ footer{padding:60px 0 28px;border-top:1px solid var(--border);}
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="#top" style="margin-bottom:12px;display:inline-block">LLM<span class="dot">.</span>PERFECTED</a>
+        <a class="brand" href="#top" style="margin-bottom:12px;display:inline-block">LLM PERFECTED</a>
         <p style="color:var(--text-muted);font-size:.92rem;max-width:280px">AI-powered front office for Bay Area small businesses — call answering, booking, and follow-up that never clocks out.</p>
       </div>
       <div>
