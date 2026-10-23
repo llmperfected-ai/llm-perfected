@@ -242,6 +242,7 @@ nav.site-nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(
 .trust-item{display:flex;align-items:flex-start;gap:.6em;font-size:.88rem;color:var(--text-muted);font-weight:500;}
 .trust-item .icon{color:var(--accent);margin-top:.3em;flex-shrink:0;}
 .trust-item a{text-decoration:underline;text-decoration-color:var(--border-strong);}
+@media (max-width:640px){.trust-row{flex-direction:column;align-items:center;gap:14px;}.trust-item{width:100%;max-width:320px;}}
 
 /* services overview */
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
